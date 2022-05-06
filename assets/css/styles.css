@@ -56,6 +56,10 @@
   --z-modal: 1000;
 }
 
+.animationSmall {
+  display: none;
+}
+
 .animation {
   width: 100%;
   height: 100vh;
@@ -228,14 +232,14 @@ svg {
 
 @-webkit-keyframes light {
   to {
-    font-size: 2.5rem;
+    font-size: 10vw;
     color: #fff;
     text-shadow: 0 0 40px #fff;
   }
 }
 @keyframes light {
   to {
-    font-size: 2.5rem;
+    font-size: 10vw;
     color: #fff;
     text-shadow: 0 0 40px #fff;
   }
@@ -296,15 +300,12 @@ svg {
   }
 }
 
-.animationSmall {
-  display: none;
-}
-
 /* animation for small screen */
 #favControl {
   display: none;
   cursor: pointer;
 }
+
 @media screen and (max-width: 901px) {
   /* .smallScreen {
     animation-name: none;
@@ -337,26 +338,30 @@ svg {
     align-items: center;
     text-align: center;
   }
+  .logSmall {
+    width: 55%;
+  }
   .logSmall img {
     margin: 3rem auto;
     cursor: pointer;
   }
   .logSmall h1 {
-    color: #484848;
+    color: var(--first-color);
     font-weight: bold;
-    letter-spacing: 7px;
+    font-size: 8vw;
+    letter-spacing: 1.2vw;
   }
   .logSmall img:hover {
-    animation: spinIcon 1.5s ease-out 1s infinite;
+    animation: spinIcon 1.5s ease-out 0.5s infinite;
   }
   .logSmall:hover h1 {
-    animation: light 1.5s ease-in 1s infinite;
+    animation: light 1.5s ease-in 0.5s infinite;
   }
   .logSmall:hover h1 span:nth-child(1) {
-    animation: lightG 1.25s linear infinite;
+    animation: lightG 0.5s linear infinite;
   }
   .logSmall:hover h1 span:nth-child(2) {
-    animation: lightB 1.25s linear 1.25s infinite;
+    animation: lightB 0.5s linear 0.5s infinite;
   }
   #favControl:checked + label > img {
     animation: spinIcon 1.5s ease-out 1s infinite;
@@ -367,7 +372,7 @@ svg {
     -moz-transition: 3s;
     -o-transition: 3s;
     transition: 3s;
-    font-size: 7rem;
+    font-size: 15vw;
     text-shadow: 0 0 40px #fff;
     color: var(--body-color);
   }
@@ -781,6 +786,18 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+@-webkit-keyframes bigS {
+  to {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes bigS {
+  to {
+    transform: scale(1.4);
+  }
+}
+
 .skills__container {
   row-gap: 0;
 }
@@ -871,7 +888,7 @@ img {
 .skills__python {
   width: 70%;
 }
-.skills__figma {
+.skills__excel {
   width: 60%;
 }
 .skills__r {
@@ -879,6 +896,13 @@ img {
 }
 .skills__spss {
   width: 90%;
+}
+
+.skills__titles:hover span i {
+  animation: bigS 0.15s linear forwards;
+}
+.skills__titles:hover h3 {
+  animation: bigS 0.15s linear forwards;
 }
 
 .skills__close .skills__list {
@@ -1144,6 +1168,7 @@ img {
 
 .project__description {
   margin-bottom: var(--mb-1-5);
+  cursor: pointer;
 }
 
 .project__title,
@@ -1154,6 +1179,24 @@ img {
 .project__img {
   width: 232px;
   justify-self: center;
+}
+
+#switch {
+  display: none;
+  cursor: pointer;
+}
+#switch:checked + label .project__removeText {
+  display: none;
+}
+#switch:checked + label br {
+  display: none;
+}
+#switch:checked + label span::after {
+  content: " ~";
+}
+#switch:checked + label span {
+  font-size: 2rem;
+  transition: 1s;
 }
 /*==================== TESTIMONIAL ====================*/
 .testimonial__data,

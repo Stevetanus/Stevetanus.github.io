@@ -1,15 +1,18 @@
 // animation
 const text = document.querySelectorAll(".thePaths");
 
-for (let i = 0; i < text.length; i++) {
-  console.log(`text number ${i} length is ${text[i].getTotalLength()}`);
-}
+// for (let i = 0; i < text.length; i++) {
+//   console.log(`text number ${i} length is ${text[i].getTotalLength()}`);
+// }
 
 const lastWord = document.querySelector("#seventeenth");
 const animation = document.querySelector("div.animation");
 const animationSmall = document.querySelector("div.animationSmall");
 lastWord.addEventListener("animationend", () => {
   animation.style = "transition: all 1s ease; opacity: 0; pointer-events:none;";
+});
+animation.addEventListener("click", function () {
+  animation.style.display = "none";
 });
 
 // set Attributes
@@ -51,7 +54,9 @@ favIcon.addEventListener("change", function () {
     setTimeout(() => {
       animationSmall.style.display = "none";
     }, 4000);
-
+    animationSmall.addEventListener("click", function () {
+      animationSmall.style.display = "none";
+    });
     console.log("There you go!");
   } else {
     console.log("not checked!");
@@ -223,14 +228,14 @@ const iconTheme = "uil-sun";
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
 
-// We obtain the current theme that the interface has by validating the dark-theme class
+// Obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
-// We validate if the user previously chose a topic
 if (selectedTheme) {
+  // Validate if the user previously chose a topic
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
@@ -238,6 +243,21 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
     iconTheme
   );
+}
+
+if (themeButton.classList.contains("uil-sun")) {
+  // console.log("nothing");
+} else {
+  console.log(text[0]);
+  console.log(myName);
+  myName.forEach((e) => {
+    e.style =
+      "text-shadow: 0 0 40px rgba(0,0,0,0.3); color: hsl(170, 28%, 16%);";
+  });
+  text.forEach((e) => {
+    e.attributes.stroke.value = "hsl(170, 28%, 16%)";
+    // setAttributes(e, { color: "hsl(170, 57%, 53%)" }); try another way to set svg color.
+  });
 }
 
 // Activate / deactivate the theme manually with the button
@@ -249,3 +269,9 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+function onload() {
+  if (!localStorage.getItem("first")) themeButton.click();
+  localStorage.setItem("first", true);
+}
+onload();
