@@ -1,0 +1,26 @@
+<form
+  onsubmit="sendEmail(); reset(); return fasle;"
+  class="contact__form grid"
+  autocomplete="off"
+  id="contactme"
+>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        SecureToken: "23ce7269-5b4a-4968-8edb-23c83b72a634",
+        To: "steventhibe@gmail.com",
+        From: document.getElementById("email").value,
+        Subject:
+          document.getElementById("subject").value +
+          " from " +
+          document.getElementById("name").value,
+        Body: document.getElementById("message").value,
+      }).then(() =>
+        alert(
+          "Please send to steventhibe@gmail.com                                                                       This survice is under production, I recommend you to send steventhibe@gmail.com!"
+        )
+      );
+    }
+  </script>
+</form>

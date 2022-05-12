@@ -50,7 +50,7 @@ favIcon.addEventListener("change", function () {
       myNameSpan.forEach((e) => {
         e.classList.add("paused");
       });
-    }, 2500);
+    }, 2000);
     setTimeout(() => {
       animationSmall.style.display = "none";
     }, 4000);

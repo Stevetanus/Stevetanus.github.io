@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--   GA   -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MTWW7SM2E9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MTWW7SM2E9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-MTWW7SM2E9');
-</script>
+      gtag("config", "G-MTWW7SM2E9");
+    </script>
 
     <!--==================== UNICONS ====================-->
     <link
@@ -370,6 +375,11 @@
             <li class="nav_item">
               <a href="#portfolio" class="nav__link">
                 <i class="uil uil-scenery nav__icon"></i> Protfolio
+              </a>
+            </li>
+            <li class="nav_item-none">
+              <a href="#project" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Project
               </a>
             </li>
             <li class="nav_item">
@@ -968,45 +978,61 @@
           <div class="swiper-wrapper">
             <!--==================== PORTFOLIO 1 ====================-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/blob.svg" alt="" class="portfolio__img" />
+              <img
+                src="https://res.cloudinary.com/dicmrvc9t/image/upload/c_fill,g_auto,w_1000,h_800/v1652336137/Wandrous/wandrous_quzr5h.jpg"
+                alt=""
+                class="portfolio__img"
+              />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Modern Website</h3>
                 <p class="portfolio__description">
                   Website adaptable to all devices with animated interactions.
                 </p>
                 <a
-                  href="#"
+                  href="https://wandrous.herokuapp.com/"
                   class="button button--flex button--small portfolio__button"
+                  target="_blank"
                   >Demo <i class="uil uil-arrow-right button__icon"></i
                 ></a>
+                <h4 class="portfolio__tags">#express #nodeJS #mongodb</h4>
               </div>
             </div>
             <!--==================== PORTFOLIO 2 ====================-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/blob.svg" alt="" class="portfolio__img" />
+              <img
+                src="https://res.cloudinary.com/dicmrvc9t/image/upload/c_fill,g_auto,w_1000,h_800/v1652341207/Wandrous/quotexts_dspzww.jpg"
+                alt=""
+                class="portfolio__img"
+              />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Brand Design</h3>
                 <p class="portfolio__description">
                   Website adaptable to all devices with animated interactions.
                 </p>
                 <a
-                  href="#"
+                  href="https://quotexts.netlify.app/"
                   class="button button--flex button--small portfolio__button"
+                  target="_blank"
                   >Demo <i class="uil uil-arrow-right button__icon"></i
                 ></a>
               </div>
             </div>
             <!--==================== PORTFOLIO 3 ====================-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/blob.svg" alt="" class="portfolio__img" />
+              <img
+                src="https://res.cloudinary.com/dicmrvc9t/image/upload/c_fill,g_auto,w_1000,h_800/v1652342789/Wandrous/calculator_btczmz.jpg"
+                alt=""
+                class="portfolio__img"
+              />
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Online Store</h3>
                 <p class="portfolio__description">
                   Website adaptable to all devices with animated interactions.
                 </p>
                 <a
-                  href="#"
+                  href="https://calcureactor.netlify.app/"
                   class="button button--flex button--small portfolio__button"
+                  target="_blank"
                   >Demo <i class="uil uil-arrow-right button__icon"></i
                 ></a>
               </div>
@@ -1025,7 +1051,7 @@
       </section>
 
       <!--==================== PROJECT IN MIND ====================-->
-      <section class="project section">
+      <section class="project section" id="project">
         <div class="project__bg">
           <div class="project__container container grid">
             <div class="project__data">
@@ -1043,9 +1069,9 @@
                   ><br />
                   <span>View</span
                   ><span class="project__removeText"
-                    >ings and feedbacks on my profile, plea from</span
+                    >ings and feedbacks on my profile, sincere plea from</span
                   >
-                  <span>me</span>.
+                  <span>me</span><span class="project__removeText">.</span>
                 </p></label
               >
               <a href="#contact" class="button button--flex button--white">
@@ -1063,105 +1089,6 @@
       </section>
 
       <!--==================== TESTIMONIAL ====================-->
-      <section class="testimonial section">
-        <h2 class="section__title">Testimonial</h2>
-        <span class="section__subtitle">My client saying</span>
-
-        <div class="testimonial__container container swiper-container">
-          <div class="swiper-wrapper">
-            <!--==================== TESTIMONIAL 1 ====================-->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img
-                    src="assets/img/testimonial1.jpg"
-                    alt=""
-                    class="testimonial__img"
-                  />
-                  <div>
-                    <h3 class="testimonial__name">Sara Smith</h3>
-                    <span class="testimonial__client">Client</span>
-                  </div>
-                </div>
-
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-
-              <p class="testimonial__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                fugit?
-              </p>
-            </div>
-            <!--==================== TESTIMONIAL 2 ====================-->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img
-                    src="assets/img/testimonial2.jpg"
-                    alt=""
-                    class="testimonial__img"
-                  />
-                  <div>
-                    <h3 class="testimonial__name">Natt Robinson</h3>
-                    <span class="testimonial__client">Client</span>
-                  </div>
-                </div>
-
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-
-              <p class="testimonial__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                fugit?
-              </p>
-            </div>
-            <!--==================== TESTIMONIAL 3 ====================-->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img
-                    src="assets/img/testimonial3.jpg"
-                    alt=""
-                    class="testimonial__img"
-                  />
-                  <div>
-                    <h3 class="testimonial__name">Raul Harris</h3>
-                    <span class="testimonial__client">Client</span>
-                  </div>
-                </div>
-
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-
-              <p class="testimonial__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-                fugit?
-              </p>
-            </div>
-          </div>
-
-          <!-- Add pagination -->
-          <div class="swiper-pagination swiper-pagination-testimonial"></div>
-        </div>
-      </section>
 
       <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact">
@@ -1169,7 +1096,7 @@
         <span class="section__subtitle">Get in touch</span>
 
         <div class="contact__container container grid">
-          <div>
+          <div class="contact__info">
             <div class="contact__information">
               <i class="uil uil-phone contact__icon"></i>
 
@@ -1183,11 +1110,13 @@
 
               <div>
                 <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">steventhibe@gmail.com</span>
+                <a class="contact__subtitle" href="mailto:steventhibe@gmail.com"
+                  >steventhibe@gmail.com</a
+                >
               </div>
             </div>
             <div class="contact__information">
-              <i class="uil uil-map-pin-alt"></i>
+              <i class="uil uil-map-pin-alt contact__icon"></i>
 
               <div>
                 <h3 class="contact__title">Location</h3>
@@ -1198,53 +1127,73 @@
             </div>
           </div>
 
-          <form action="" class="contact__form grid">
+          <form
+            action="https://formsubmit.co/40f616ddf225831b89f8bd26495061b9"
+            method="POST"
+            class="contact__form grid"
+            autocomplete="off"
+            id="contactme"
+          >
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <label for="" class="contact__label">Name</label>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://stevetanus.github.io"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <label for="name" class="contact__label">Name</label>
                 <input
                   autocomplete="new-password"
                   type="text"
-                  name=""
-                  id=""
+                  name="name"
+                  id="name"
                   class="contact__input"
+                  required
                 />
               </div>
               <div class="contact__content">
-                <label for="" class="contact__label">Email</label>
+                <label for="email" class="contact__label">Email</label>
                 <input
-                  autocomplete="new-password"
+                  autocomplete="off"
                   type="email"
-                  name=""
-                  id=""
+                  name="email"
+                  id="email"
                   class="contact__input"
+                  required
                 />
               </div>
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Project</label>
+              <label for="subject" class="contact__label">Subject</label>
               <input
                 autocomplete="new-password"
                 type="text"
-                name=""
-                id=""
+                name="subject"
+                id="subject"
                 class="contact__input"
+                required
               />
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Message</label>
+              <label for="message" class="contact__label">Message</label>
               <textarea
-                name=""
-                id=""
+                name="message"
+                id="message"
                 cols="0"
                 rows="7"
                 class="contact__input"
+                required
               ></textarea>
             </div>
             <div>
-              <a href="#" class="button button--flex">
-                Send Message<i class="uil uil-message button__icon"></i
-              ></a>
+              <button
+                type="submit"
+                form="contactme"
+                class="button button--flex"
+              >
+                Send Message<i class="uil uil-message button__icon"></i>
+              </button>
             </div>
           </form>
         </div>
@@ -1256,7 +1205,7 @@
       <div class="footer__bg">
         <div class="footer__container container grid">
           <div>
-            <h1 class="footer__title">Steven</h1>
+            <a href="#project"><h1 class="footer__title">Steven</h1></a>
             <span class="footer__subtitle">Frontend developer</span>
           </div>
 
@@ -1288,11 +1237,11 @@
               <i class="uil uil-github"></i>
             </a>
             <a
-              href="https://medium.com/@steventhibe"
+              href="https://codepen.io/stevetanus"
               target="_blank"
               class="footer__social"
             >
-              <i class="uil uil-medium-m"></i>
+              <i class="uil uil-pen"></i>
             </a>
           </div>
         </div>
