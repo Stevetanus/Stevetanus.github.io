@@ -1466,6 +1466,9 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
+  .section {
+    padding: 3rem 0 1rem;
+  }
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -1512,7 +1515,6 @@ img {
   .section__subtitle {
     margin-bottom: 4rem;
   }
-
   .header {
     top: 0;
     bottom: initial;
@@ -1645,9 +1647,6 @@ img {
   .main,
   .footer__container {
     padding: 0;
-  }
-  .home {
-    padding: 0rem 0 2rem;
   }
   .home__blob {
     width: 320px;
