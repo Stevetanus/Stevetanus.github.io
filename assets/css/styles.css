@@ -352,7 +352,7 @@ svg {
     cursor: pointer;
   }
   .logSmall h1 {
-    color: var(--first-color);
+    color: var(--first-color-lighter);
     font-weight: bold;
     font-size: 8vw;
     letter-spacing: 1.2vw;
@@ -380,8 +380,8 @@ svg {
     transition: 3s;
     /* font-size: 10vw;
     letter-spacing: 1.2vw; */
-    text-shadow: 0 0 40px #fff;
-    color: var(--first-color-lighter);
+    text-shadow: 0 0 40px #288;
+    /* color: var(--first-color-lighter); */
   }
   .paused {
     pointer-events: none;
