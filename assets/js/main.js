@@ -275,3 +275,8 @@ function onload() {
   localStorage.setItem("first", true);
 }
 onload();
+
+function downloadCV(e) {
+  // e.preventDefault();
+  alert("Please email me your request for my CV, Thank you!");
+}
