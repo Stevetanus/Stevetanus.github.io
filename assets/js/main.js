@@ -57,15 +57,15 @@ favIcon.addEventListener("change", function () {
     animationSmall.addEventListener("click", function () {
       animationSmall.style.display = "none";
     });
-    console.log("There you go!");
+    // console.log("There you go!");
   } else {
-    console.log("not checked!");
+    // console.log("not checked!");
   }
 });
 function checkBox() {
   if (favIcon.checked == false) {
     favIcon.checked = true;
-    console.log("checked");
+    // console.log("checked");
     favIcon.dispatchEvent(new Event("change"));
   }
 }
@@ -248,8 +248,8 @@ if (selectedTheme) {
 if (themeButton.classList.contains("uil-sun")) {
   // console.log("nothing");
 } else {
-  console.log(text[0]);
-  console.log(myName);
+  // console.log(text[0]);
+  // console.log(myName);
   myName.forEach((e) => {
     e.style =
       "text-shadow: 0 0 40px rgba(0,0,0,0.3); color: hsl(170, 28%, 16%);";
