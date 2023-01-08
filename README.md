@@ -7,4 +7,5 @@ Go to my **[blog](https://stevethibe.netlify.app)** <br>
 ---
 
 [![My portfolio is online now!](content/ex-portfolio/assets/img/apple-touch-icon.png "portfolio")](https://stevetanus.github.io)
+
 The website created with HTML, CSS and JavaScript, feel free to give me feedbacks.
