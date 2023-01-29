@@ -1,7 +1,7 @@
 # My Portfolio
 
 Go to my **[website](https://stevetanus.github.io)** <br>
-Go to my **[blog](https://stevethibe.netlify.app)** <br>
+Go to my **[blog](https://steventhibe.netlify.app)** <br>
 **Contact me with email <steventhibe@gmail.com>**
 
 ---
